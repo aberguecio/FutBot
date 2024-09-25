@@ -9,7 +9,7 @@ const openai = new OpenAIApi(configuration);
 
 async function getChatGPTResponse(messages) {
   const response = await openai.createChatCompletion({
-    model: 'gpt-3.5-turbo',
+    model: 'gpt-4o-mini',
     messages: messages,
   });
   return response.data.choices[0].message.content;
